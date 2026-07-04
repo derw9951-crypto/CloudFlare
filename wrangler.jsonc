@@ -18,6 +18,10 @@
       "id": "0ca30460270940fc9654a6dcf968d052"
     }
   ],
+  "vars": {
+    "HF_REPO": "Jopanovic/daofu-yunpan",
+    "HF_PRIVATE": "true"
+  },
   "compatibility_flags": [
     "nodejs_compat",
     "global_fetch_strictly_public"
