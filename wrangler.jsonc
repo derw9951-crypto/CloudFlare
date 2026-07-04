@@ -1,15 +1,24 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "cloudflare",
+  "main": "deploy/worker/index.js",
   "compatibility_date": "2026-07-04",
   "observability": {
     "enabled": true
   },
   "assets": {
     "directory": "frontend-dist",
+    "binding": "ASSETS",
     "not_found_handling": "single-page-application"
   },
+  "kv_namespaces": [
+    {
+      "binding": "img_url",
+      "id": "0ca30460270940fc9654a6dcf968d052"
+    }
+  ],
   "compatibility_flags": [
-    "nodejs_compat"
+    "nodejs_compat",
+    "global_fetch_strictly_public"
   ]
 }
